@@ -1,0 +1,165 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+::selection {
+  background-color: #730039;
+  color: #d9ff00;
+}
+/* All Sections */
+section {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Content Section */
+section.section-content {
+  padding: 5rem 12rem;
+  height: auto;
+  background-image: linear-gradient(to right, #e7f33c, #d8fd06);
+  color: #000;
+}
+/* Content Section Heading */
+section.section-content h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3.3rem;
+  width: 35%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  /*====================================================================*/
+  /* Border Block property is shorthand for Border Top and Bottom  */
+  /*****************************************************/
+  /* border-block: 0.5rem solid #101d36; */
+  /* border-block: 0.5rem;
+     border-block-style: solid;
+     border-block-color: #62f302; */
+  /*****************************************************/
+  /*====================================================================*/
+
+  /*====================================================================*/
+  /*Border Inline property is shorthand for Border left and right  */
+  /***************************************************************/
+  /* border-inline: 0.5rem;
+     border-inline-style: solid;
+     border-inline-color: orangered; */
+  /***************************************************************/
+  /*====================================================================*/
+
+  border-inline: 0.5rem solid #ae00ff;
+}
+/* Content Section Paragraph */
+section.section-content p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* Content Section First Paragraph */
+section.section-content p:first-of-type {
+  font-family: serif;
+  font-size: 6rem;
+  font-weight: 400;
+  text-align: center;
+  height: 10rem;
+  width: 10rem;
+  color: #ae00ff;
+  float: left;
+  transform: translateX(3rem) translateY(-3.4rem);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+.center {
+  background-color: rgba(18, 3, 102, 0.808);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 3px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* All Section Images */
+.section-1 {
+  position: relative;
+  background-image: url(images/bg1.jpg);
+}
+.section-2 {
+  background-image: url(images/bg2.jpg);
+}
+.section-3 {
+  background-image: url(images/bg3.jpg);
+}
+.section-4 {
+  background-image: url(images/bg4.jpg);
+}
+.section-5 {
+  position: relative;
+  background-image: url(images/bg5.jpg);
+}
+
+/**************************/
+/* Responsiveness  */
+/**************************/
+
+/* above 1600px */
+@media screen and (min-width: 100em) {
+  html {
+    font-size: 85%;
+  }
+}
+/* Below 950px */
+@media screen and (max-width: 59.37em) {
+  html {
+    font-size: 56.25%;
+  }
+  section.section-content h1 {
+    font-size: 2.8rem;
+  }
+}
+/* Below 730px */
+@media screen and (max-width: 45.75em) {
+  section.section-content h1 {
+    width: 50%;
+  }
+  section.section-content {
+    padding: 4rem 8rem;
+  }
+  section .section-content p {
+    font-size: 1.6rem;
+  }
+}
+/* Below 600px */
+@media screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+  section.section-content {
+    padding: 3rem 6rem;
+  }
+}
+/* Below 420px */
+@media screen and (max-width: 26.25em) {
+  section.section-content h1 {
+    width: 70%;
+  }
+  section.section-content {
+    padding: 2rem 4rem;
+  }
+} ;
